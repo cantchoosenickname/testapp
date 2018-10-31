@@ -12,7 +12,7 @@
       hint="Food or restaurant name"
       text="{{search_query}}"
       submit="onSearchPress"
-      loaded="onSearchLoaded" 
+      loaded="onSearchLoaded"
       />
 
     // todo for styling: read about styling here https://docs.nativescript.org/ui/ns-ui-widgets/tab-view

@@ -16,23 +16,7 @@ function onNavigatingTo(args) {
 
 exports.onNavigatingTo = onNavigatingTo;
 
-exports.onFoodTap = function(args){
-  if(!page){ return; } //shouldn't happen
 
-  var list_entry = args.object.items[args.index];
-
-  console.log();
-  const getFrameById = require("tns-core-modules/ui/frame").getFrameById;
-
-  const navigationEntry = {
-      moduleName: "description/description-page",
-      context: list_entry,
-      animated: true,
-  };
-
-
-  page.frame.navigate(navigationEntry);
-}
 
 //search
 exports.onSearchLoaded = function(args){
