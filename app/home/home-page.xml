@@ -1,12 +1,21 @@
 <Page class="page"
     navigatingTo="onNavigatingTo"
-    xmlns="http://schemas.nativescript.org/tns.xsd">
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:nsDrawer="nativescript-ui-sidedrawer"
+    >
 
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text=""></Label>
     </ActionBar>
 
+    <StackLayout >
+      <Label text="{{ mainContentText }}" textWrap="true" fontSize="13" padding="10" />
 
-    <Button text="Tap Me!" tap="tapbtn" class="btn btn-primary btn-active" />
+      <Button text="Open drawer" tap="onOpenMenuTap" />
+
+      <Button text="Tap Me!" tap="goTo" path="foods-list/foods-list-page" class="btn btn-primary btn-active" />
+
+    </StackLayout>
+
 
 </Page>

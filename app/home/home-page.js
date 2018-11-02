@@ -5,6 +5,9 @@ logic, and to set up your page’s data binding.
 */
 const HomeViewModel = require("./home-view-model");
 const frameModule = require("tns-core-modules/ui/frame");
+var view = require("ui/core/view");
+var dialogs = require("tns-core-modules/ui/dialogs");
+var app = require("application");
 
 
 function onNavigatingTo(args) {
@@ -21,4 +24,14 @@ exports.tapbtn = function(args){
 
     console.log("tapped");
 
+}
+
+exports.goTo = function(args){
+    const page = args.object.page;
+    page.frame.navigate(args.object.path);
+}
+
+exports.onOpenMenuTap = function(args){
+  var drawer = app.getRootView();
+  drawer.toggleDrawerState();
 }

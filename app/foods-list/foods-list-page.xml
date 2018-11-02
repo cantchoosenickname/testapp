@@ -1,25 +1,32 @@
-<Page navigatingTo="onNavigatingTo" class="page"
+<Page loaded="onNavigatingTo" class="page"
     xmlns="http://schemas.nativescript.org/tns.xsd"
     xmlns:sd="nativescript-ui-sidedrawer"
 
     xmlns:components="foods-list/listview"
 
-    actionBarHidden="true">
+    actionBarHidden="false">
 
+    <ActionBar>
+      <NavigationButton icon="res://ic_menu_black_24dp"></NavigationButton>
+      <SearchBar id="food_search_bar"
+        hint="Food or restaurant name"
+        text="{{search_query}}"
+        submit="onSearchPress"
+        loaded="onSearchLoaded"
+        />
+    </ActionBar>
     <StackLayout>
 
-    <SearchBar id="food_search_bar"
-      hint="Food or restaurant name"
-      text="{{search_query}}"
-      submit="onSearchPress"
-      loaded="onSearchLoaded"
-      />
+
+
+
+
 
     // todo for styling: read about styling here https://docs.nativescript.org/ui/ns-ui-widgets/tab-view
     <TabView id="tabViewContainer">
-
     <TabViewItem title="ALL">
           <StackLayout>
+            <!--<Label text="{{ test_txt }}" textWrap="true" class="food-list-price" />-->
             <components:listview list="{{foods_all}}"/>
          </StackLayout>
     </TabViewItem>

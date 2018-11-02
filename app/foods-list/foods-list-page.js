@@ -10,8 +10,6 @@ var page;
 function onNavigatingTo(args) {
     page = args.object;
     page.bindingContext = new FoodsListViewModel();
-
-
 }
 
 exports.onNavigatingTo = onNavigatingTo;

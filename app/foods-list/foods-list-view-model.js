@@ -4,6 +4,7 @@ const Cache = require("tns-core-modules/ui/image-cache").Cache;
 
 function FoodsListViewModel() {
     const viewModel = observableModule.fromObject({
+      test_txt : "test text",
       foods_all : {
         items: [
         {

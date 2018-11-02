@@ -5,6 +5,15 @@ purpose of the file is to pass control to the app’s first module.
 */
 const application = require("tns-core-modules/application");
 
+exports.goTo = function(args){
+    const page = args.object.page;
+    page.frame.navigate(args.object.path);
+}
+
+
+
+
+
 application.run({ moduleName: "app-root" });
 
 /*

@@ -3,7 +3,7 @@
                 itemTap="onFoodTap"
                 loaded="{{ onListViewLoaded }}"
                 separatorColor="orangered"
-                class="list-group" id="listView" row="2">
+                class="list-group">
     <ListView.itemTemplate>
       <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
       <StackLayout class="list-group-item">
