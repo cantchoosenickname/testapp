@@ -2,6 +2,7 @@ const FoodsListViewModel = require("./foods-list-view-model");
 const listViewModule = require("tns-core-modules/ui/list-view");
 const Cache = require("tns-core-modules/ui/image-cache").Cache;
 var dialogs = require("tns-core-modules/ui/dialogs");
+var app = require("application");
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
 *************************************************************/
@@ -36,4 +37,9 @@ exports.onSearchPress = function(args){
       message: args.object.text,
       okButtonText: "OK"
   });
+}
+
+exports.onOpenMenuTap = function(args){
+  var drawer = app.getRootView();
+  drawer.toggleDrawerState();
 }
