@@ -1,0 +1,32 @@
+<nsDrawer:RadSideDrawer id="sideDrawer" xmlns:nsDrawer="nativescript-ui-sidedrawer" loaded="onLoaded">
+  <nsDrawer:RadSideDrawer.drawerTransition>
+    <nsDrawer:SlideInOnTopTransition/>
+  </nsDrawer:RadSideDrawer.drawerTransition>
+
+  <nsDrawer:RadSideDrawer.drawerContent>
+
+    <StackLayout backgroundColor="white">
+      <StackLayout height="56" style="text-align: center; vertical-align: center;">
+        <Label text="Navigation Menu"/>
+      </StackLayout>
+      <StackLayout>
+        <Label text="Primary" padding="10" backgroundColor="lightgray"/>
+        <Label text="Social" padding="10"/>
+        <Label text="Promotions" padding="10" />
+        <Label text="Labels" padding="10" backgroundColor="lightgray" />
+        <Label text="Important" padding="10" />
+        <Label text="Starred" padding="10" />
+        <Label text="Sent Mail" padding="10" />
+        <Label text="Drafts" padding="10" />
+      </StackLayout>
+      <Label text="Close Drawer" color="lightgray" padding="10" style="horizontal-align: center" tap="{{ onCloseDrawerTap }}"/>
+
+    </StackLayout>
+
+  </nsDrawer:RadSideDrawer.drawerContent>
+
+  <nsDrawer:RadSideDrawer.mainContent>
+    <!-- This is the navigation frame -->
+    <Frame defaultPage="home/home-page"></Frame>
+  </nsDrawer:RadSideDrawer.mainContent>
+</nsDrawer:RadSideDrawer>

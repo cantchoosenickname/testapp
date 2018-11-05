@@ -1,0 +1,56 @@
+.btn-primary{
+  background-color: red;
+}
+
+.title
+{
+  padding-top: 5;
+  font-size: 28px;
+  padding-left: 120px;
+  color: red;
+}
+
+.list-group-item .food-list-descr
+{
+  font-size: 14px;
+  padding-left: 60px;
+  color: green;
+}
+
+.list-group-item .food-list-price
+{
+  text-align: right;
+  padding-right: 60px;
+  font-size: 14px;
+  color: blue;
+}
+
+.list-group-item
+{
+  padding-left: 0;
+  padding-top: 5;
+}
+
+.list-group-item .avail-at
+{
+  text-align: right;
+  padding-right: 400px;
+  font-size: 14px;
+  color: blue;
+}
+
+.list-group-item .oldprice
+{
+  text-align: right;
+  padding-right: 200px;
+  font-size: 14px;
+  color: blue;
+}
+
+.list-group-item .dash
+{
+  text-align: right;
+  padding-right: 160px;
+  font-size: 14px;
+  color: blue;
+}

@@ -1,0 +1,29 @@
+<Page navigatingTo="onNavigatingTo" class="page"
+    xmlns="http://schemas.nativescript.org/tns.xsd" >
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Food Description"></Label>
+    </ActionBar>
+
+    <GridLayout class="list-group-item" rows="auto, auto , auto , auto , auto , auto , auto , auto" columns="*">
+      <Image row="0" src="{{ image_url }}" width="200" height="200" stretch="aspectFill" class="food-list-image"/>
+      <Label row="1" text="{{ title || 'Downloading...' }}" textWrap="true" class="title" />
+      <Label row="2" text="{{ descr }}" textWrap="true" class="food-list-descr" />
+      <Label row="3" text="{{ price }}" textWrap="true" class="food-list-price" />
+      <Label row="3" text="20:20" textWrap="true" class="avail-at" />
+      <Label row="3" text="30$" textWrap="true" class="oldprice" />
+      <Label row="3" text="-" textWrap="true" class="dash" />
+
+      <Button row="4" text="Зарезервировать" tap="reserveTap" class="btn btn-primary btn-active" />
+
+       <Label row="5" text="Тут должна быть карта, но мне лень пердолиться с ней" textWrap="true" />
+    </GridLayout>
+</Page>
+
+<!-- <GridLayout class="list-group-item" rows="auto, auto , *" columns="140, *">
+<Label row="0" col="1" text="{{ title || 'Downloading...' }}" textWrap="true" class="title" />
+<Image row="0" col="0" src="{{ image_url }}" width="100" height="100" stretch="aspectFill" class="food-list-image" rowSpan="3"></Image>
+<Label row="1" col="1" text="{{ descr }}" textWrap="true" class="food-list-descr" />
+<Label row="2" col="1" text="{{ price }}" textWrap="true" class="food-list-price" />
+<Label row="2" col="1" text="&#xf06e;" textWrap="true" class="viewsCount" />
+<Label row="2" col="1" text="&#xf164;" textWrap="true" class="likesCount" />
+</GridLayout> -->

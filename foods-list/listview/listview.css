@@ -1,0 +1,38 @@
+.title
+{
+  padding-top: 5;
+  font-size: 14px;
+  color: red;
+}
+
+.list-group .list-group-item .food-list-descr
+{
+  font-size: 14px;
+  color: green;
+}
+
+.list-group .list-group-item .food-list-price
+{
+  text-align: right;
+  font-size: 14px;
+  color: blue;
+}
+
+.list-group .list-group-item
+{
+  padding-left: 0;
+  padding-top: 5;
+}
+
+.list-group .viewsCount
+{
+      font-family: "fontawesome";
+
+      margin-left: 10px;
+}
+
+.list-group .likesCount
+{
+      font-family: "fontawesome";
+      margin-left: 210px;
+}
