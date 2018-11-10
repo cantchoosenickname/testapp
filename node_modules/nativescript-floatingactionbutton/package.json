@@ -1,0 +1,138 @@
+{
+  "_from": "nativescript-floatingactionbutton",
+  "_id": "nativescript-floatingactionbutton@4.1.4",
+  "_inBundle": false,
+  "_integrity": "sha512-kyLr8SxF0O9UZzZYpi9ffQbha4A4LdU77iwFEcl6Lq7arFgR/c6kOqg7DpoenGTWjbiZsPfuQPy34dDySQHuCQ==",
+  "_location": "/nativescript-floatingactionbutton",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-floatingactionbutton",
+    "name": "nativescript-floatingactionbutton",
+    "escapedName": "nativescript-floatingactionbutton",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-floatingactionbutton/-/nativescript-floatingactionbutton-4.1.4.tgz",
+  "_shasum": "fca32b8c6dab21b02bc2088da2752957b38a9fa0",
+  "_spec": "nativescript-floatingactionbutton",
+  "_where": "/home/user/testapp",
+  "author": {
+    "name": "Brad Martin",
+    "email": "bmartin@nstudio.io",
+    "url": "https://github.com/bradmartin"
+  },
+  "bugs": {
+    "url": "https://github.com/bradmartin/nativescript-floatingactionbutton/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Lázaro Danillo",
+      "url": "https://github.com/lazaromenezes"
+    },
+    {
+      "name": "Steve McNiven-Scott",
+      "url": "https://github.com/sitefinitysteve"
+    },
+    {
+      "name": "Nathanael Anderson",
+      "url": "https://github.com/NathanaelA"
+    },
+    {
+      "name": "Gabriel Marinho",
+      "url": "https://github.com/gabrielbiga"
+    },
+    {
+      "name": "Alexander Vakrilov",
+      "url": "https://github.com/vakrilov"
+    },
+    {
+      "name": "Samuel Ikechukwu",
+      "url": "https://github.com/holymp2006"
+    },
+    {
+      "name": "Stanimira Vlaeva",
+      "url": "https://github.com/sis0k0"
+    }
+  ],
+  "deprecated": false,
+  "description": "A NativeScript plugin for Material Design Floating Action Button.",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2",
+    "rimraf": "^2.6.2",
+    "tns-core-modules": "^4.2.0",
+    "tns-platform-declarations": "^4.2.0",
+    "tslint": "~5.11.0",
+    "typescript": "~2.8.2"
+  },
+  "homepage": "https://github.com/bradmartin/nativescript-floatingactionbutton",
+  "keywords": [
+    "ecosystem:nativescript",
+    "NativeScript",
+    "native",
+    "javascript",
+    "material design",
+    "FAB",
+    "floating-action-button",
+    "android",
+    "ios",
+    "bradmartin",
+    "nStudio"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.ts, *.js, *.css, *.scss, *.md": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "fab",
+  "name": "nativescript-floatingactionbutton",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    },
+    "plugin": {
+      "nan": true,
+      "pan": true,
+      "core3": "true",
+      "category": "Interface"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradmartin/nativescript-floatingactionbutton.git"
+  },
+  "scripts": {
+    "build": "npm run tsc && npm run build.native",
+    "build.native": "node scripts/build-native.js",
+    "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
+    "clean": "npm run demo.reset && npx rimraf -- node_modules package-lock.json && npm i",
+    "demo.android": "npm run tsc && cd ../demo && tns run android --syncAllFiles --emulator",
+    "demo.ios": "npm run tsc && cd ../demo && tns run ios --syncAllFiles --emulator",
+    "demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms package-lock.json",
+    "development.setup": "npm run setup && npm link && cd ../demo && npm link nativescript-floatingactionbutton && cd ../src",
+    "generate.typings.ios": "cd ../demo && TNS_DEBUG_METADATA_PATH=\"$(pwd)/metadata\" tns build ios && TNS_TYPESCRIPT_DECLARATIONS_PATH=\"$(pwd)/typings\" tns build ios && echo 'Now look for your library typings in demo/typings!'",
+    "plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-floatingactionbutton && tns plugin add ../src",
+    "plugin.tscwatch": "npm run tsc -- -w",
+    "postclone": "npm i && node scripts/postclone.js && cd ../demo && npm i && npx rimraf -- package-lock.json && cd ../src",
+    "precommit": "lint-staged",
+    "prepack": "npm run build.native",
+    "test.android": "npm run tsc && npm run tslint && cd ../demo && tns build android && tns test android --justlaunch",
+    "test.ios": "npm run tsc && npm run tslint && cd ../demo && tns build ios && tns test ios --justlaunch",
+    "tsc": "tsc",
+    "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\""
+  },
+  "typings": "index.d.ts",
+  "version": "4.1.4"
+}

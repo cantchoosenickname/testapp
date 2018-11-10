@@ -1,0 +1,10 @@
+.fab-button {
+    height: 100;
+    width: 100;
+    margin: 15;
+    padding: -20;
+    border-radius: 50%;
+    background-color: #ff4081;
+    horizontal-align: right;
+    vertical-align: bottom;
+}

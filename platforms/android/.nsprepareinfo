@@ -1,0 +1,32 @@
+{
+	"time": "Sun Nov 04 2018 18:53:08 GMT+0200 (EET)",
+	"nativePlatformStatus": "3",
+	"bundle": false,
+	"release": false,
+	"changesRequireBuild": false,
+	"projectFileHash": "3c59b6abdc6880182ee9bae2c9324d882543e58f74ab91ae0e085546b0a2752f",
+	"changesRequireBuildTime": "Sun Nov 04 2018 18:27:27 GMT+0200 (EET)",
+	"appFilesHashes": {
+		"/home/user/testapp/app/app-root.xml": "9abf739df36372bf05b81de9ff4c115ed0494e67",
+		"/home/user/testapp/app/app.css": "375a8433e1ae02bdc5ebcb8c3118456fd2e81697",
+		"/home/user/testapp/app/app.js": "5d0c4ef4bac8805a3d02f69e256ac040b4764946",
+		"/home/user/testapp/app/description/description-page.js": "f387e286679bbe1e0cab903d94ee14be2f70e0d8",
+		"/home/user/testapp/app/description/description-page.xml": "efa33ff419870c560cb94b58927b502bb86c7409",
+		"/home/user/testapp/app/description/description-view-model.js": "79ac125e01adc4a2fe8291edb082347c9b40cff0",
+		"/home/user/testapp/app/foods-list/foods-list-page.css": "9433aa38d7f066ebb0410df7f89fce12ea3a9698",
+		"/home/user/testapp/app/foods-list/foods-list-page.js": "39c52ee6b85211c0f262a2985ad816bfbc0bfc49",
+		"/home/user/testapp/app/foods-list/foods-list-page.xml": "6b2f14ac5d270fd720c466fe8e080dabc95ce05b",
+		"/home/user/testapp/app/foods-list/foods-list-view-model.js": "c605dab1d9ec97b3121288937a73a198437f2e43",
+		"/home/user/testapp/app/foods-list/listview/listview.js": "b3c55fc4cf0b06d4c6d385d4c89a893e5130cbe1",
+		"/home/user/testapp/app/foods-list/listview/listview.xml": "656fcfafa6ebd81a29366d22699d7bd0af27d5ea",
+		"/home/user/testapp/app/home/home-page.js": "dcf7dec0ceb4bf1d81fe0040873ca46ddead03c2",
+		"/home/user/testapp/app/home/home-page.xml": "bd682f9c2474035774cebf3fcac3f13eb799f16e",
+		"/home/user/testapp/app/home/home-view-model.js": "71903a3ad45c7426ef62ec3eb1ad70b5a87ceb49",
+		"/home/user/testapp/app/map/map-page.js": "a3fb5f169cdab10a31af70cc4db1179fce56bcb0",
+		"/home/user/testapp/app/map/map-page.xml": "7e3ea6ae7dcc1d7b08ac276ef81863b45fe4ab06",
+		"/home/user/testapp/app/map/map-view-model.js": "3590947ced6bc884c56aacbdd1cfe70e46da4135",
+		"/home/user/testapp/app/package.json": "554a1e7b09cfa1663c75683765118999cb11411a",
+		"/home/user/testapp/app/references.d.ts": "c83a3304d98c2586359871f5d8ac10c8aa8af848",
+		"/home/user/testapp/app/fonts/fontawesome.ttf": "aade127acd14838d0d65db1db4b8dca3549daeb9"
+	}
+}

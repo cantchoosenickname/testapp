@@ -1,0 +1,11 @@
+{
+    "nativescript-floatingactionbutton": true,
+    "nativescript-fontawesome": true,
+    "nativescript-mapbox": true,
+    "nativescript-theme-core": true,
+    "nativescript-ui-sidedrawer": true,
+    "tns-core-modules": true,
+    "nativescript-fonticon": true,
+    "nativescript-ui-core": true,
+    "tns-core-modules-widgets": true
+}

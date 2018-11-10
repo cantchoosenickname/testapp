@@ -1,0 +1,49 @@
+<Page loaded="onNavigatingTo" class="page"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:sd="nativescript-ui-sidedrawer"
+
+    xmlns:components="foods-list/listview"
+    xmlns:FAB="nativescript-floatingactionbutton"
+
+    actionBarHidden="false">
+
+    <ActionBar>
+      <StackLayout orientation="horizontal">
+      <Button text="&#xf0c9;" tap="onOpenMenuTap" class="fontawesome"/>
+
+      <SearchBar id="food_search_bar"
+        hint="Food or restaurant name"
+        text="{{search_query}}"
+        submit="onSearchPress"
+        loaded="onSearchLoaded"
+        />
+      </StackLayout>
+    </ActionBar>
+    <GridLayout rows="auto, *">
+
+    <StackLayout row="1" >
+      // todo for styling: read about styling here https://docs.nativescript.org/ui/ns-ui-widgets/tab-view
+      <TabView id="tabViewContainer">
+      <TabViewItem title="ALL">
+            <StackLayout>
+              <!--<Label text="{{ test_txt }}" textWrap="true" class="food-list-price" />-->
+              <components:listview list="{{foods_all}}"/>
+           </StackLayout>
+      </TabViewItem>
+      <TabViewItem title="Favorites">
+          <StackLayout>
+              <components:listview list="{{foods_fav}}"/>
+          </StackLayout>
+      </TabViewItem>
+     </TabView>
+   </StackLayout>
+
+    <FAB:fab tap="fabTap"
+     row="1"
+     icon="res://map"
+     rippleColor="#f1f1f1"
+     class="fab-button" />
+
+  </GridLayout>
+		<!-- << list-view-create-xml -->
+</Page>
