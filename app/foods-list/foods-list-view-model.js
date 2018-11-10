@@ -43,3 +43,15 @@ function FoodsListViewModel() {
 }
 
 module.exports = FoodsListViewModel;
+<<<<<<< HEAD
+
+const screen = require("tns-core-modules/platform").screen;
+
+// mainScreen is of type ScreenMetrics interface https://docs.nativescript.org/api-reference/interfaces/_platform_.screenmetrics
+let scale =  screen.mainScreen.scale;
+let widthPixels = screen.mainScreen.widthPixels;
+let heightPixels = screen.mainScreen.heightPixels;
+let widthDIPs = screen.mainScreen.widthDIPs; // DIPs === pixels/scale (e.g 1024 pixels / 2x scale = 512 DIPs)
+let heightDIPs = screen.mainScreen.heightDIPs;
+=======
+>>>>>>> d351a4605a51143a9416791b7b6a448a838b719b

@@ -9,7 +9,11 @@
     <ActionBar>
       <StackLayout orientation="horizontal">
       <Button text="&#xf0c9;" tap="onOpenMenuTap" class="font-awesome" />
+<<<<<<< HEAD
+
+=======
       
+>>>>>>> d351a4605a51143a9416791b7b6a448a838b719b
       <SearchBar id="food_search_bar"
         hint="Food or restaurant name"
         text="{{search_query}}"
@@ -20,10 +24,27 @@
     </ActionBar>
     <StackLayout>
 
+<<<<<<< HEAD
+      <!-- <ListView components:items="{{foods_all}}">
+        <ListView.itemTemplate height="50">
+        <StackLayout>
+          <Label text="{{title}}" textwrap="True" class="title"/>
+          <Label text="{{descr}}" textwrap="True" class="descr"/>
+          <Label text="{{price}}" textwrap="True" class="price"/>
+        </StackLayout>
+        </ListView.itemTemplate>
+      </ListView> -->
+
+      <!-- title:"Бабочки",
+      image_url: "https://preview.redd.it/sqc4bazmoyp11.jpg?width=480&s=776153e248970fcc8ee7aaab7953f1052eb2f26e",
+      descr: "Бабочки в животе",
+      price: "5 $", -->
+=======
 
 
 
 
+>>>>>>> d351a4605a51143a9416791b7b6a448a838b719b
 
     // todo for styling: read about styling here https://docs.nativescript.org/ui/ns-ui-widgets/tab-view
     <TabView id="tabViewContainer">
